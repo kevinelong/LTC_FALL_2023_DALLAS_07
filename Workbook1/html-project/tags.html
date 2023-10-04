@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,57 @@
     <style>
         * {
             border: 1px solid black;
-            background: rgba(0,0,0,0.25);
+            background: rgba(0, 0, 0, 0.25);
             color: white;
             margin: 1px;
             padding: 1px;
         }
-    </style></head>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100vw;
+        }
+
+        header nav a {
+            margin-right: 13em;
+        }
+
+        #logo {
+            width: 5vw;
+        }
+    </style>
+</head>
+
 <body>
- 
-    <body>
-        <header>
-            <nav>
-                <a href="/">HOME</a>
-            </nav>
-        </header>
-        <main>
-            <section> <!-- BLOCK ELEMENT -->
-                <p>
-                    <h1>Hello</h1>
-                    <h3>Dallas</h3>
-                    Content
-                </p> 
-                
-            </section>            
-        </main>
-        <footer>
-            &copy;2023
-        </footer>
-    </body>
+    <header>
+        <img src="./images/Portrait.sailormoon.webp" id="logo">
+        <nav>
+            <a href="/">HOME</a>
+        </nav>
+    </header>
+    <main style="width: 50%; margin: auto;">
+        <section style="text-align: center;"> <!-- BLOCK ELEMENT -->
+            <p>
+            <h1>Hello</h1>
+            <h3>Dallas</h3>
+            Content
+            </p>
+
+        </section>
+    </main>
+    <footer>
+        &copy;2023
+    </footer>
+
 </body>
+
 </html>
